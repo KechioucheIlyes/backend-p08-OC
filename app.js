@@ -14,7 +14,7 @@ app.use(express.json())
 
 
 app.use(loggingMiddleware);
-app.use(cors())
+app.use(cors()) 
 
 app.use("/api/github", gitRouter)
 app.use("/api/contact", limiterMiddleware, contactRouter)
