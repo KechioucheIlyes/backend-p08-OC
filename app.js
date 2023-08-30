@@ -17,8 +17,9 @@ app.use(loggingMiddleware);
 app.use(cors())
 
 app.use("/api/github", gitRouter)
-app.use("/api//contact", limiterMiddleware, contactRouter)
-app.use("/api//likes", likesRouter)
+app.use("/api/contact", limiterMiddleware, contactRouter)
+app.use("/api/likes", likesRouter)
+
 
 module.exports = app
 
